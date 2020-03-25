@@ -1,0 +1,38 @@
+{
+    "actionButtons": {
+        "defaultColor": "#ff0034", // Can also use string color names.
+        "loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
+        "reloadButton":"♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+        "commands": [
+            {
+                "name": "Build",
+                "color": "black",
+                "singleInstance": true,
+                "command": "make nrf52840_xxaa", // This is executed in the terminal.
+            },
+            {
+                "name": "Flash",
+                "color": "black",
+                "singleInstance": true,
+                "command": "make flash", // This is executed in the terminal.
+            },
+            {
+                "name": "Flash Soft-Device",
+                "color": "black",
+                "singleInstance": true,
+                "command": "make flash_softdevice", // This is executed in the terminal.
+            },
+            {
+                "name": "Erase",
+                "color": "red",
+                "singleInstance": true,
+                "command": "make erase", // This is executed in the terminal.
+            }
+        ]
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "nrf-sdk/**": true
+    }
+}
