@@ -277,7 +277,7 @@ help:
 setup: ./nrf-sdk
 
 ./nrf-sdk:
-  ./scripts/get_sdk.sh
+	./scripts/get_sdk.sh
 
 TEMPLATE_PATH := $(SDK_ROOT)/components/toolchain/gcc
 
