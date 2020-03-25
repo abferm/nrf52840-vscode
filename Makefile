@@ -275,6 +275,7 @@ help:
 	@echo		flash      - flashing binary
 
 setup: ./nrf-sdk
+	./scripts/get_cli_tools.sh
 
 ./nrf-sdk:
 	./scripts/get_sdk.sh

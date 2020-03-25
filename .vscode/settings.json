@@ -5,6 +5,12 @@
         "reloadButton":"♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
         "commands": [
             {
+                "name": "Setup",
+                "color": "black",
+                "singleInstance": true,
+                "command": "make setup", // This is executed in the terminal.
+            },
+            {
                 "name": "Build",
                 "color": "black",
                 "singleInstance": true,
