@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52840-DK",
+            "includePath": [
+                "${workspaceFolder}/config",
+                "${workspaceFolder}/nrf-sdk/**"
+            ],
+            "defines": [
+                "BOARD_PCA10056",
+                "CONFIG_GPIO_AS_PINRESET",
+                "FLOAT_ABI_HARD",
+                "NRF52840_XXAA",
+                "NRF_SD_BLE_API_VERSION=6",
+                "S140",
+                "SOFTDEVICE_PRESENT",
+                "SWI_DISABLE0"
+            ],
+            "compilerPath": "/usr/local/gcc-arm-none-eabi-7-2018-q2-update/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
